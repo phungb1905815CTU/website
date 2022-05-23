@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Roboto);
+body {
+padding: 20px;
+box-sizing: border-box;
+font-family: Roboto, Helvetica, Arial, serif;
+background: url(http://farm5.staticflickr.com/4180/34813900975_be65f5a553_o.jpg);
+background-size: cover;
+}
+header img {
+border-radius: 50%;
+margin: 20px auto;
+display: block;
+width: 200px;
+border: 5px solid #fff;
+}
+aside {
+border-top: 0px solid #26A69A;
+border-bottom: 0px solid #00695C;
+border-radius: 50%;
+margin: 0 auto;
+display: block;
+height: 250px;
+width: 250px;
+background: url(http://farm5.staticflickr.com/4180/34813900975_be65f5a553_o.jpg);
+background-size: cover;
+overflow: hidden;
+box-shadow: 0 0 100px 10px #fff;
+transition: all ease 0.3s;
+}
+aside:hover {
+border-top: 4px solid #26A69A;
+border-bottom: 4px solid #00695C;
+border-radius: 5px;
+height: 480px;
+width: 350px;
+box-shadow: 0 0 70px 10px #fff;
+}
+
+aside:hover header img {
+animation: profile_image 2000ms linear both;
+animation-delay: 0.5s;
+}
+
+header {
+text-align: center;
+}
+
+header h1 {
+position: relative;
+text-align: center;
+color: #fff;
+text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+font-size: 25px;
+line-height: 25px;
+display: inline-block;
+padding: 10px;
+transition: all ease 0.250s;
+border-top: 1px solid #fff;
+border-bottom: 1px solid #fff;
+}
+
+aside:hover header h1 {
+margin-top: 0px;
+outline: 0 solid #fff;
+border-top: 0px solid #fff;
+border-bottom: 1px solid #fff;
+}
+
+header h2 {
+text-align: center;
+color: #fff;
+text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+font-size: 17px;
+font-weight: normal;
+line-height: 0px;
+margin: 0;
+}
+
+.profile-bio {
+margin-top: 20px;
+padding: 1px 20px 10px 20px !important;
+transition: all linear 1.5s;
+color: #fff;
+font-size: 14px;
+opacity: 0;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 49%, rgba(0, 0, 0, 0.61) 100%);
+}
+
+aside:hover .profile-bio {
+opacity: 1;
+}
+
+.profile-bio p:first-child {
+text-align: center;
+font-size: 16px;
+}
+
+.profile-social-links {
+position: relative;
+margin-top: -440px;
+margin-left: -100px;
+list-style-type: none;
+opacity: 0;
+transition: all ease 0.5s;
+}
+
+aside:hover .profile-social-links {
+margin-left: -30px;
+opacity: 1;
+}
+
+.profile-social-links li img {
+width: 30px;
+background: #fff;
+border-radius: 50%;
+padding: 5px;
+}
+
+aside:hover ul li:first-child {
+animation: social_animation 2000ms ease-in-out both;
+animation-delay: 0.75s;
+}
+
+aside:hover ul li:nth-child(2) {
+animation: social_animation 2000ms ease-in-out both;
+animation-delay: 1s;
+}
+
+aside:hover ul li:nth-child(3) {
+animation: social_animation 2000ms ease-in-out both;
+animation-delay: 1.25s;
+}
+
+	</style>
+<body>
+<aside class="profile-card">
+<header>
+<!-- Hình của bạn -->
+<a href="">
+<img src="https://phungb1905815ctu.github.io/website/NguyenThanhPhung.jpg">
+</a>
+<!-- Tên của bạn -->
+<h1>Nguyễn Thanh Phụng</h1>
+
+<!-- Công việc hay nghề của bạn -->
+<h2>- <p> Email: phungb1905815@student.ctu.edu.vn </p>
+      <p> Ngành : Quản lý công nghiệp </p>
+      <p> Lớp : TN1983A3 </p>
+      <p> Tỉ lệ đóng góp : 100% </p>
+    - 
+</h2>
+
+</header>
+
+<!-- Thêm thông tin của bạn -->
+<div class="profile-bio">
+
+<p>Chào mừng các bạn</p>
+<p>Tôi là một nhà phát triển web. Tôi chủ yếu làm việc với PHP, HTML, CSS, JS và WordPress.
+<br />Tôi cũng làm việc tốt với Photoshop, Corel Draw, After Effects và vài thứ khác.</p>
+
+</div>
+
+<!-- Liên kết mạng xã hội -->
+<ul class="profile-social-links">
+
+<!-- Thông tin tài khoản twitter -->
+<li>
+<a href="https://twitter.com/">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
+</a>
+</li>
+
+<!-- Thông tin Facebook -->
+<li>
+<a href="https://facebook.com">
+<img src="http://farm5.staticflickr.com/4221/34651248062_73641b1a80_o.png">
+</a>
+</li>
+
+<!-- Tài khoản Google +-->
+<li>
+<a href="https://plus.google.com/u/0/118260931574775251745/posts">
+<img src="http://farm5.staticflickr.com/4186/34004419773_ed97040ef5_o.png">
+</a>
+</li>
+
+<!--Bạn có thể thêm hoặc xóa mạng xã hội tại đây-->
+
+</ul>
+
+</aside>
+<!-- Chỉ có vậy thôi ! -->
+</body>
+</html>
